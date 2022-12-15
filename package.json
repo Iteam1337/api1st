@@ -22,6 +22,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "description": "a next js template",
+  "description": "API first",
   "author": ""
 }

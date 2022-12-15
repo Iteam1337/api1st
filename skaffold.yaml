@@ -1,20 +1,10 @@
 apiVersion: skaffold/v2beta27
 kind: Config
 metadata:
-  name: iteam-next-site
+  name: apifirst
 build:
-  tagPolicy:
-    sha256: {}
   artifacts:
-    - image: iteam1337/iteam-next-site
-      context: client
-      docker:
-        buildArgs:
-          SANITY_READ_DATA_TOKEN: "{{ .SANITY_READ_DATA_TOKEN }}"
-          SANITY_API_TOKEN: "{{ .SANITY_API_TOKEN }}"
-          SANITY_PREVIEW_SECRET: "{{ .SANITY_PREVIEW_SECRET }}"
-     # platforms:
-     #   - linux/amd64
+    - image: iteam1337/apifirst
   
 deploy:
   kubectl:
