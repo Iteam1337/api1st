@@ -37,11 +37,7 @@ const MobileMenu = () => {
           <NavLinks />
         </nav>
         <div className="side-menu__sep"></div>
-        <div className="side-menu__content">
-         
-            </a>
-          </div>
-        </div>
+        <div className="side-menu__content"></div>
       </div>
     </div>
   );
