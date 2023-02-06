@@ -9,4 +9,8 @@ build:
 deploy:
   kubectl:
     manifests:
+      - k8s/namespace.yaml
       - k8s/web.yaml
+    flags:
+      global:
+        - --namespace=apifirst
